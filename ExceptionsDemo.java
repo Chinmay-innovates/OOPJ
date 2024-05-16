@@ -15,6 +15,7 @@ public class ExceptionsDemo {
         }
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // Checked Exceptions -> File
         try {

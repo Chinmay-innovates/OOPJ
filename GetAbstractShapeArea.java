@@ -2,6 +2,7 @@
 // Abstract Shape class
 abstract class Shape {
     public abstract void draw();
+
     public abstract double getArea();
 }
 
@@ -18,7 +19,6 @@ class Circle extends Shape {
     @Override
     public void draw() {
         System.out.println("Drawing Circle");
-
     }
 
     // Method to calculate the area of a circle
