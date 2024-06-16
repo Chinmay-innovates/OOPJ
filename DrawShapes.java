@@ -3,7 +3,8 @@ import java.awt.*;
 
 // Abstract Shape class
 abstract class Shape {
-    public abstract void draw(Graphics g); // Update to include Graphics parameter for drawing
+    // Update to include Graphics parameter for drawing
+    public abstract void draw(Graphics g); 
     public abstract double getArea();
 }
 
@@ -49,7 +50,8 @@ class Rectangle extends Shape {
     @Override
     public void draw(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawRect(100, 100, (int) length, (int) width); // Draw rectangle at (100, 100) with specified dimensions
+        g2d.drawRect(100, 100, (int) length, (int) width); 
+        // Draw rectangle at (100, 100) with specified dimensions
     }
 
     // Method to calculate the area of a rectangle
@@ -72,7 +74,8 @@ class Square extends Shape {
     @Override
     public void draw(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        g2d.drawRect(100, 100, (int) side, (int) side); // Draw square at (100, 100) with specified side length
+        g2d.drawRect(100, 100, (int) side, (int) side); 
+        // Draw square at (100, 100) with specified side length
     }
 
     // Method to calculate the area of a square

@@ -14,7 +14,7 @@ public class RandomAccessFileExample {
             String readData1 = f.readUTF();
             String readData2 = f.readUTF();
 
-            System.out.println("Data read from file");
+            System.out.println("Data read from file:");
             System.out.println(readData1);
             System.out.println(readData2);
             f.seek(f.length());
@@ -26,7 +26,7 @@ public class RandomAccessFileExample {
             readData1 = f.readUTF();
             readData2 = f.readUTF();
             String readData3 = f.readUTF();
-            System.out.println("Data read from file after appending");
+            System.out.println("Data read from file after appending:");
             System.out.println(readData1);
             System.out.println(readData2);
             System.out.println(readData3);

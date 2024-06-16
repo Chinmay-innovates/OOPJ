@@ -12,7 +12,7 @@ public class ExceptionsDemo {
             throw new InvalidAgeException("User must be atleast 18 years old");
         } else {
             System.out.println("Registration successful for user : " + name);
-        }
+        } 
     }
 
     @SuppressWarnings("unused")
@@ -20,8 +20,9 @@ public class ExceptionsDemo {
         // Checked Exceptions -> File
         try {
             File file = new File("myfile.txt");
+            @SuppressWarnings("resource")
             FileReader fr = new FileReader(file);
-          
+
         } catch (FileNotFoundException e) {
             System.out.println("File not found : " + e.getMessage());
         }
@@ -37,13 +38,14 @@ public class ExceptionsDemo {
         }
 
         // Custom Err Handler
-        System.out.println(" Demonstrating Custom Exception : ");
+        System.out.println("Demonstrating Custom Exception: ");
         try {
-            register("Ramu", 20);
+            register("Virat", 18);
+            register("Rohit", 45);
             register("Madhu ", 17);
-            register("Rohit", 19);
         } catch (InvalidAgeException e) {
             System.out.println("Custom Age Exception : " + e.getMessage());
+            e.printStackTrace();
         }
 
     }

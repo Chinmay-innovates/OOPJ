@@ -8,6 +8,9 @@ public class MapExample {
         map.put(1, "Apple");
         map.put(2, "Banana");
         map.put(3, "Cherry");
+        map.put(3, "Litchi");
+        map.put(1, "Orange");
+        map.put(4, "Cherry");
         System.out.println("Map Example:");
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue());
