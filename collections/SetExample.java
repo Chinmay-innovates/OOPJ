@@ -8,10 +8,10 @@ public class SetExample {
         HashSet<String> set = new HashSet<>();
         HashSet<Integer> s = new HashSet<>();
         Iterator<Integer> it = s.iterator();
-        s.add(1);
-        s.add(2);
-        s.add(3);
-        s.add(4);
+        s.add(33);
+        s.add(12);
+        s.add(2214);
+        s.add(44234512);
         while (it.hasNext()) {
             System.out.print(it.next());
         }
@@ -20,6 +20,9 @@ public class SetExample {
         set.add("Cherry");
         set.add("Diamond");
         set.add("Egg");
+        set.add("Egg 2");
+        set.add("Egg 3");
+        set.add("Egg 4");
 
         System.out.println("Set Example:");
         for (String fruit : set) {

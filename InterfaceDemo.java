@@ -41,15 +41,16 @@ class Rectangle implements Shape {
 
 }
 
+@SuppressWarnings("unused")
 public class InterfaceDemo {
     public static void main(String args[]) {
         Circle c = new Circle(10.2);
-        c.area();
-        c.perimeter();
+        // c.area();
+        // c.perimeter();
 
         Rectangle r = new Rectangle(12.6, 23.55);
-        r.area();
-        r.perimeter();
+        // r.area();
+        // r.perimeter();
     }
 
 }

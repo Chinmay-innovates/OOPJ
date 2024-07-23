@@ -1,4 +1,6 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
 
 class InvalidAgeException extends Exception {
     public InvalidAgeException(String message) {
@@ -12,7 +14,7 @@ public class ExceptionsDemo {
             throw new InvalidAgeException("User must be atleast 18 years old");
         } else {
             System.out.println("Registration successful for user : " + name);
-        } 
+        }
     }
 
     @SuppressWarnings("unused")
@@ -33,7 +35,8 @@ public class ExceptionsDemo {
             System.out.println(arr[7]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.err.println("Array index out of bounds : " + e.getMessage());
-        } finally {
+        }
+         finally {
             System.out.println("Finally block ...");
         }
 
@@ -45,7 +48,6 @@ public class ExceptionsDemo {
             register("Madhu ", 17);
         } catch (InvalidAgeException e) {
             System.out.println("Custom Age Exception : " + e.getMessage());
-            e.printStackTrace();
         }
 
     }

@@ -96,22 +96,23 @@ class Square extends Shape {
  */
 public class GetShapeArea {
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Circle c = new Circle(5);
         Rectangle r = new Rectangle(5, 6);
         Triangle t = new Triangle(5, 8);
         Square s = new Square(5);
 
-        c.draw();
-        c.getArea();
+        // c.draw();
+        // c.getArea();
 
-        r.draw();
-        r.getArea();
+        // r.draw();
+        // r.getArea();
 
-        t.draw();
-        t.getArea();
+        // t.draw();
+        // t.getArea();
 
-        s.draw();
-        s.getArea();
+        // s.draw();
+        // s.getArea();
     }
 }
